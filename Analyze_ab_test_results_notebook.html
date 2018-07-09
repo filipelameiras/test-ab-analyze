@@ -13275,7 +13275,7 @@ Name: user_id, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>o z-score não excede o valor crítico de 1.95996. Então devemos falhar em rejeitar a hipótese nula.</strong></p>
+<p><strong>o z-score não excede o valor crítico de 1.95996. Então devemos falhar em rejeitar a hipótese nula. a diferença no valor dos p-values é porque a hipótese da regressão logística é bicaudal enquanto que a hipótese definida na Parte II é unicaudal. O valor do p-value bicaudal é igual a: 2 * (1 - p_value_unicaudal) </strong></p>
 
 </div>
 </div>
@@ -14033,7 +14033,8 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong> O valor da variável ab_page se manteve o mesmo. Então a adição do componente de país não teve influência sobre o resultado sobre o resultado do teste. </strong>.</p>
+<p><strong> O valor da variável ab_page se manteve o mesmo. Então a adição do componente de país não teve influência sobre o resultado sobre o resultado do teste.</strong></p>
+<h3 id="Conclus&#227;o">Conclus&#227;o<a class="anchor-link" href="#Conclus&#227;o">&#182;</a></h3><p><strong> Em termos práticos, estatisticamente falando, não houve um resultado que indique que a página nova é melhor que a velha. Levando em conta somente a taxa de cliques, eu não colocaria a nova pagina em produção. Contudo, poderíamos analizar outras variáveis que não foram incluídas nesse teste que possam indicar que a página nova deva entrar em produção, por exemplo, uma variável "receita" ou alguma variável que indique que a página nova é mais "bonita". Assim poderíamos ter um resultado mais conclusivo.</strong></p>
 
 </div>
 </div>
